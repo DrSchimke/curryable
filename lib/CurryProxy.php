@@ -17,7 +17,7 @@ class CurryProxy
     private $object;
 
     /**
-     * @var boolean
+     * @var bool
      */
     private $autoCurrying;
 

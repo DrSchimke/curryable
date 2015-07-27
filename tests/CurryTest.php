@@ -30,10 +30,10 @@ class CurryTest extends \PHPUnit_Framework_TestCase
         $test = new CurryableTestClass();
 
         $result1 = $test->autoCurry()->add(1);
-        $this->assertTrue(is_callable($result1), "Failed assertion that result1 is callable");
+        $this->assertTrue(is_callable($result1), 'Failed assertion that result1 is callable');
 
         $result2 = $result1(2, 3);
-        $this->assertTrue(is_callable($result2), "Failed assertion that result2 is callable");
+        $this->assertTrue(is_callable($result2), 'Failed assertion that result2 is callable');
 
         $result3 = $result2(4);
         $this->assertEquals(1 + 2 + 3 + 4, $result3);

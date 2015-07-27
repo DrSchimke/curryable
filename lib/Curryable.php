@@ -12,7 +12,7 @@
 namespace Sci\Curryable;
 
 /**
- * Interface Curryable
+ * Interface Curryable.
  *
  * @see http://en.wikipedia.org/wiki/Currying
  */
@@ -35,7 +35,7 @@ interface Curryable
      * $obj->autoCurry()->something($args) returns:
      * - the result of $obj->something(), if all required arguments are given
      * - a curried version of method $obj->something(), if the number of arguments $args is smaller than number of
-     *   required arguments of $obj->something()
+     *   required arguments of $obj->something().
      *
      * Given $f = $obj->autoCurry()->something() and the number of arguments $args for $f($args) is smaller then
      * required, $f() recursively returns further curried functions.
