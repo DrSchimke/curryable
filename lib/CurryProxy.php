@@ -13,9 +13,7 @@ namespace Sci\Curryable;
 
 class CurryProxy
 {
-    /**
-     * @var object
-     */
+    /** @var object */
     private $object;
 
     /**
