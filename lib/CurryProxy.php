@@ -16,9 +16,7 @@ class CurryProxy
     /** @var object */
     private $object;
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     private $autoCurrying;
 
     /**
@@ -65,6 +63,12 @@ class CurryProxy
         return $result;
     }
 
+    /**
+     * @param string $name
+     * @param array  $arguments
+     *
+     * @return mixed
+     */
     private function doCurry($name, array $arguments)
     {
         return function () use ($name, $arguments) {
