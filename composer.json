@@ -1,6 +1,6 @@
 {
     "name": "sci/curryable",
-    "description": "Currying library.",
+    "description": "Currying library",
     "type": "library",
     "license": "MIT",
     "require": {
@@ -12,7 +12,11 @@
     },
     "autoload": {
         "psr-4": { 
-            "Sci\\Curryable\\": "lib/",
+            "Sci\\Curryable\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
             "Sci\\Tests\\Curryable\\": "tests/"
         }
     },
